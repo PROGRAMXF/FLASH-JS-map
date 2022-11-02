@@ -1,17 +1,15 @@
-const productos = [
-    {id: 'lista', precio: 1},
-    {id: 'lista', precio: 2},
-    {id: 'lista', precio: 3},
-    {id: 'lista', precio: 4},
-    {id: 'lista', precio: 5},
-];
-const nuevaLista = productos.map(function(producto){
-    if(producto.precio < 10) return producto
+const MESES = ['Enero', 'Febrero', 'Marzo', 'Abril',
+ 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre',
+  'Octubre', 'Noviembre', 'Diciembre'];
 
-    
-         producto.precio = producto.precio *2;
-    
+  MESES.forEach(mes => {
+    var column = document.createElement('div');
+    column.classList.add('column', 'col-4');
 
+    var h3 = document.createElement('h3');
+        h3.classList.add('bg-primary', 'cuadro');
+        h3.textContent = mes;
 
-});
-console.log(nuevaLista);
+    column.appendChild(h3);
+    document.getElementById('contenido').appendChild(column); //apendChild toma el contenido y los coloca en las columnas
+  })
