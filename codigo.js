@@ -1,7 +1,9 @@
+//array
 const meses = ['Enero', 'Febrero', 'Marzo', 'Abril',
  'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre',
   'Octubre', 'Noviembre', 'Diciembre'];
 
+  //contenido
   meses.forEach(mes => {
     var column = document.createElement('div');
     column.classList.add('column', 'col-4');
@@ -12,20 +14,24 @@ const meses = ['Enero', 'Febrero', 'Marzo', 'Abril',
 
     column.appendChild(h3);
     document.getElementById('contenido').appendChild(column); //apendChild toma el contenido y los coloca en las columnas
+
+    
   })
+  //funcion agregar cambio
+  function agregar (){    
 
-  const cambios = meses.map(function x (mesmas){
-    return mesmas + 1;
-
-
-})  
-    function x (){  
-        meses.forEach(mes => {          
-        
-            column.appendChild(h3);  
-        document.getElementById('cambio').appendChild(column);   
-            
-        })
-    }
+    const cambios = meses.map(function agregar (ene){
+      return ene +  " n ";         
+      
+  } )   
+  //muestra por pantalla el cambio a traves del button
+  document.getElementById("cambio").innerHTML = cambios;
+  }
+  
+              
+          
+      
+      
+     
     
 
