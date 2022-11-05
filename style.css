@@ -1,0 +1,12 @@
+.container {
+  text-align: center;
+  margin-top: 9em;
+}
+.btn-button {
+  cursor: pointer;
+  background-color: rgb(204, 140, 95);
+}
+.actualizar {
+  text-align: center;
+  margin-top: 9em;
+}
