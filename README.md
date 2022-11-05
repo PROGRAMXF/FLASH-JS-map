@@ -7,7 +7,6 @@ Cómo podemos comprobar en el fragmento, la función map siempre regresará un n
 La función map recibe cómo parámetro una función (callback) la cual se ejecutará para cada elemento del array, sin embargo, en ECMAScript 6 es posible utiliza Arrow Functions en lugar de una callback.
 Hace un momento dijimos que map recibe una función, sin embargo, falto detallar que esta función puede recibir 3 parámetros, los cuales son los siguientes:
 
-Map recibe una función, sin embargo, falto detallar que esta función puede recibir 3 parámetros, los cuales son los siguientes:
 currentValue: elemento actual que se esta procesando.
 index: corresponde a la posición (index) donde se encuentra el currentValue dentro del array.
 array: corresponde al array original que estamos procesando.
